@@ -4,60 +4,112 @@
 
 ### Discover. Book. Experience — Your Next Big Moment.
 
-A full-stack **MERN event discovery and booking platform** for discovering events, managing bookings, and providing administrators with event and booking management tools.
+A full-stack **MERN event discovery and booking platform** built to provide a smooth experience for discovering events, viewing event details, and managing bookings.
 
 <br>
 
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge\&logo=express\&logoColor=white)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)](https://www.mongodb.com/)
-[![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)](https://jwt.io/)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge\&logo=express\&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)
 
 <br><br>
 
-**[📂 View Repository](https://github.com/Aniruddha-Porey/The-Event-Canvas)**
+[📂 Repository](https://github.com/Aniruddha-Porey/The-Event-Canvas)
 
 </div>
 
 ---
 
-## 📖 About The Project
+## 🌟 Overview
 
-**The Event Canvas** is a full-stack event booking application built using the **MERN stack**.
+**The Event Canvas** is a full-stack event booking web application developed using the **MERN stack**.
 
-The platform allows users to discover events, explore event details, register and authenticate securely, book events, and manage their bookings from a personalized dashboard.
+Users can explore available events, view detailed event information, create an account, securely log in, and manage their event bookings.
 
-An administrator can manage events, monitor bookings, and track booking-related revenue through a dedicated dashboard.
-
-The project was developed to demonstrate practical **full-stack web development, REST API integration, authentication, database management, and frontend-backend communication**.
+The application also includes an administrative side for managing events and monitoring bookings.
 
 ---
 
-## ✨ Key Features
+# 🖥️ Screenshots
+
+## 🏠 Homepage
+
+<p align="center">
+  <img src="screenshots/Homepage.png" width="95%" alt="The Event Canvas Homepage">
+</p>
+
+The homepage introduces the platform and provides users with a simple starting point for discovering events.
+
+---
+
+## 🔎 Explore Events
+
+<p align="center">
+  <img src="screenshots/explore.png" width="95%" alt="Explore Events">
+</p>
+
+The Explore section allows users to browse available events and discover experiences that interest them.
+
+---
+
+## 🎟️ Event Details
+
+<p align="center">
+  <img src="screenshots/Event_details.png" width="95%" alt="Event Details Page">
+</p>
+
+The Event Details page provides detailed information about an individual event before booking.
+
+---
+
+## 🔐 Login
+
+<p align="center">
+  <img src="screenshots/login.png" width="80%" alt="Login Page">
+</p>
+
+Users can securely sign in to access their account and booking features.
+
+---
+
+## 📝 Create Account
+
+<p align="center">
+  <img src="screenshots/Create_account.png" width="80%" alt="Create Account Page">
+</p>
+
+New users can create an account to access the event booking platform.
+
+---
+
+# ✨ Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 👤 User Experience
+### 👤 User Features
 
-* User registration & login
+* User registration
+* Secure login
 * JWT authentication
-* Secure password hashing
+* Password hashing
 * OTP verification
-* Browse available events
-* Detailed event pages
+* Browse events
+* Event details
 * Event booking
 * Booking history
-* Booking status tracking
+* Booking status
 * User dashboard
 
 </td>
 
 <td width="50%">
 
-### 🛠️ Administration
+### 🛠️ Admin Features
 
 * Admin authentication
 * Admin dashboard
@@ -65,7 +117,7 @@ The project was developed to demonstrate practical **full-stack web development,
 * Booking management
 * Booking status monitoring
 * Revenue tracking
-* Role-based authorization
+* Role-based access control
 
 </td>
 </tr>
@@ -73,89 +125,86 @@ The project was developed to demonstrate practical **full-stack web development,
 
 ---
 
-## 🧩 Application Flow
+# 🛠️ Tech Stack
+
+### Frontend
+
+| Technology      | Purpose                    |
+| --------------- | -------------------------- |
+| ⚛️ React.js     | User interface             |
+| ⚡ Vite          | Development and build tool |
+| 🎨 CSS          | Styling                    |
+| 🧭 React Router | Navigation                 |
+
+### Backend
+
+| Technology    | Purpose           |
+| ------------- | ----------------- |
+| 🟢 Node.js    | Server runtime    |
+| 🚂 Express.js | REST API          |
+| 🍃 MongoDB    | Database          |
+| 📦 Mongoose   | Database modeling |
+
+### Authentication & Services
+
+| Technology    | Purpose                     |
+| ------------- | --------------------------- |
+| 🔐 JWT        | User authentication         |
+| 🔒 bcrypt.js  | Password hashing            |
+| 📧 Nodemailer | Email and OTP functionality |
+
+---
+
+# 🏗️ Architecture
 
 ```text
                          THE EVENT CANVAS
                                 │
-                    ┌───────────┴───────────┐
-                    │                       │
-                  USER                    ADMIN
-                    │                       │
-              Register / Login          Admin Login
-                    │                       │
-                    ▼                       ▼
-              Browse Events          Admin Dashboard
-                    │                       │
-                    ▼                 ┌─────┴─────┐
-              Event Details           │           │
-                    │              Events      Bookings
-                    ▼
-                 Booking
-                    │
-                    ▼
-                 Payment
-                /       \
-          Success       Failed
-             │             │
-             └──────┬──────┘
-                    ▼
-             User Dashboard
+                 ┌──────────────┴──────────────┐
+                 │                             │
+              FRONTEND                      BACKEND
+                 │                             │
+              React.js                    Node.js
+                 │                         Express.js
+                 │                             │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                           MongoDB
+                                │
+                                ▼
+                       Application Data
 ```
 
 ---
 
-## 🖥️ Screenshots
+# 🔄 User Flow
 
-> Add your project screenshots here to make the repository visually attractive.
-
-### 🏠 Home Page
-
-<p align="center">
-  <img src="client/src/assets/hero-bg.png" width="90%" alt="The Event Canvas Home Page">
-</p>
-
-### 🎟️ Event Experience
-
-<p align="center">
-  <img src="client/src/assets/logo.png" width="250" alt="The Event Canvas">
-</p>
-
-> **Tip:** For the best GitHub presentation, replace these example images with actual screenshots of your Home, Events, Event Details, Login, User Dashboard and Admin Dashboard pages.
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-
-| Technology      | Purpose                      |
-| --------------- | ---------------------------- |
-| ⚛️ React.js     | User interface               |
-| ⚡ Vite          | Frontend development & build |
-| 🎨 CSS          | Styling & responsive UI      |
-| 🧭 React Router | Client-side navigation       |
-
-### Backend
-
-| Technology    | Purpose                 |
-| ------------- | ----------------------- |
-| 🟢 Node.js    | Server-side runtime     |
-| 🚂 Express.js | REST API                |
-| 🍃 MongoDB    | Database                |
-| 📦 Mongoose   | MongoDB object modeling |
-
-### Security & Services
-
-| Technology    | Purpose                   |
-| ------------- | ------------------------- |
-| 🔐 JWT        | Authentication            |
-| 🔒 bcrypt.js  | Password hashing          |
-| 📧 Nodemailer | Email & OTP functionality |
+```text
+        👤 User
+          │
+          ▼
+   Create Account / Login
+          │
+          ▼
+     Explore Events
+          │
+          ▼
+     Event Details
+          │
+          ▼
+       Book Event
+          │
+          ▼
+    Booking Status
+          │
+          ▼
+    User Dashboard
+```
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 TheEventCanvas/
@@ -177,6 +226,13 @@ TheEventCanvas/
 │   ├── server.js
 │   └── package.json
 │
+├── screenshots/
+│   ├── Homepage.png
+│   ├── explore.png
+│   ├── Event_details.png
+│   ├── login.png
+│   └── Create_account.png
+│
 ├── .gitignore
 ├── package-lock.json
 └── README.md
@@ -184,25 +240,23 @@ TheEventCanvas/
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### 1. Clone the repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Aniruddha-Porey/The-Event-Canvas.git
 cd The-Event-Canvas
 ```
 
-### 2. Install dependencies
-
-Install frontend dependencies:
+## 2. Install Frontend Dependencies
 
 ```bash
 cd client
 npm install
 ```
 
-Install backend dependencies:
+## 3. Install Backend Dependencies
 
 ```bash
 cd ../server
@@ -211,7 +265,7 @@ npm install
 
 ---
 
-## ⚙️ Environment Configuration
+# ⚙️ Environment Variables
 
 Create a `.env` file inside the `server` directory.
 
@@ -223,13 +277,13 @@ EMAIL_USER=your_email
 EMAIL_PASS=your_email_password
 ```
 
-> ⚠️ **Never commit your actual `.env` file to GitHub.**
+> ⚠️ Never upload your real `.env` file or credentials to GitHub.
 
 ---
 
-## ▶️ Run Locally
+# ▶️ Running the Application
 
-### Start the backend
+### Start Backend
 
 ```bash
 cd server
@@ -242,7 +296,7 @@ Backend:
 http://localhost:5000
 ```
 
-### Start the frontend
+### Start Frontend
 
 Open another terminal:
 
@@ -259,104 +313,63 @@ http://localhost:5173
 
 ---
 
-## 🔐 Authentication
+# 🔐 Security
 
-The application uses:
+The application implements several security-related features:
 
 * JWT-based authentication
-* bcrypt password hashing
+* Password hashing with bcrypt
+* Protected routes
 * Role-based authorization
 * OTP verification
-* Protected routes
-
-User roles include:
-
-```text
-USER
- └── Access events & manage bookings
-
-ADMIN
- └── Manage events & monitor bookings
-```
+* Environment-based configuration
 
 ---
 
-## 📊 Core Modules
+# 📚 What I Learned
 
-```text
-┌──────────────────────────────────────────────┐
-│                THE EVENT CANVAS              │
-├──────────────────────────────────────────────┤
-│                                              │
-│  Authentication                              │
-│  ├── Register                                │
-│  ├── Login                                   │
-│  └── OTP Verification                        │
-│                                              │
-│  Events                                      │
-│  ├── Browse Events                            │
-│  ├── Event Details                            │
-│  └── Event Management                         │
-│                                              │
-│  Bookings                                    │
-│  ├── Create Booking                           │
-│  ├── Booking Status                           │
-│  └── Booking History                          │
-│                                              │
-│  Administration                              │
-│  ├── Dashboard                               │
-│  ├── Event Management                         │
-│  ├── Booking Management                       │
-│  └── Revenue Tracking                         │
-│                                              │
-└──────────────────────────────────────────────┘
-```
-
----
-
-## 🎯 What I Learned
-
-Building this project helped me strengthen my understanding of:
+Building The Event Canvas helped me gain practical experience with:
 
 * Full-stack MERN development
 * React component architecture
 * REST API development
-* MongoDB & Mongoose
-* Authentication & authorization
+* MongoDB and Mongoose
+* Authentication and authorization
 * JWT implementation
 * Password security
 * OTP verification
 * Email integration
 * Frontend-backend integration
 * Admin dashboard development
-* Git & GitHub workflow
+* Git and GitHub
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-* 💳 Real payment gateway integration
+* 💳 Online payment gateway integration
 * 🎫 QR-code based digital tickets
-* 🔎 Advanced event search & filtering
+* 🔎 Advanced event search and filtering
 * ⭐ Event reviews and ratings
 * 📧 Automated booking confirmation emails
 * 📈 Advanced admin analytics
 * ⚡ Real-time booking updates
 * ☁️ Cloud deployment
-* 📱 Further mobile optimization
+* 📱 Improved mobile experience
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 <div align="center">
 
-### Aniruddha Porey
+## Aniruddha Porey
 
 **B.Tech — Computer Science & Engineering**
+
 **Narula Institute of Technology**
 
-Interested in:
+<br>
 
 `Web Development` • `MERN Stack` • `Programming` • `Cloud Computing`
 
@@ -372,6 +385,8 @@ Interested in:
 
 ### ⭐ If you like this project, consider giving it a star!
 
-**The Event Canvas — Discover. Book. Experience.**
+### 🎟️ The Event Canvas
+
+**Discover. Book. Experience.**
 
 </div>
