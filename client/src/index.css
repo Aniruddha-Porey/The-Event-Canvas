@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* =========================================
+   THE EVENT CANVAS - GLOBAL THEME
+========================================= */
+
+:root {
+  --tec-navy: #05052b;
+  --tec-dark: #080033;
+  --tec-purple: #5b21b6;
+  --tec-pink: #ec0ca8;
+  --tec-orange: #ff7a00;
+  --tec-blue: #2563eb;
+  --tec-text: #ffffff;
+  --tec-muted: #c4c7e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--tec-text);
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(91, 33, 182, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(236, 12, 168, 0.18),
+      transparent 30%
+    ),
+    #05052b;
+}
+
+/* =========================================
+   COMMON CONTAINER
+========================================= */
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   GRADIENT TEXT
+========================================= */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ff9d00,
+    #ff1493,
+    #8b5cf6,
+    #38bdf8
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================================
+   GLOW BUTTON
+========================================= */
+
+.glow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 999px;
+
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+
+  background: linear-gradient(
+    90deg,
+    #ff7a00,
+    #ec0ca8,
+    #6d28d9
+  );
+
+  box-shadow:
+    0 0 20px rgba(236, 12, 168, 0.35),
+    0 0 40px rgba(91, 33, 182, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.glow-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 25px rgba(236, 12, 168, 0.6),
+    0 0 50px rgba(91, 33, 182, 0.4);
+}
+
+/* =========================================
+   GLASS CARD
+========================================= */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+textarea,
+select {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 10px;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ec0ca8;
+
+  box-shadow:
+    0 0 0 3px rgba(236, 12, 168, 0.15),
+    0 0 20px rgba(236, 12, 168, 0.2);
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05052b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    #ec0ca8,
+    #6d28d9
+  );
+
+  border-radius: 10px;
+}
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+  background: #ec0ca8;
+  color: white;
+}
